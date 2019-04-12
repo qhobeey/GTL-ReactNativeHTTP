@@ -1,12 +1,12 @@
-import React from 'react'
-import {View, Text, StyleSheet, Image} from 'react-native'
-import ScrollViewJs from './ScrollViewJs'
-import ProtocolsDj from './ProtocolsDj'
+import React, {Component} from 'react'
+import {View} from 'react-native'
+import { createStackNavigator, createAppContainer } from "react-navigation"
+import Motivation from './components/index'
+import MotivationDetails from './components/index/details'
 
-const App = () => {
-  return (
-    <ProtocolsDj />
-  )
-}
+const AppNavigator = createStackNavigator({
+    Home: Motivation,
+    Details: MotivationDetails
+});
 
-export default App
+export default createAppContainer(AppNavigator);

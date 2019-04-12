@@ -6,12 +6,12 @@ export default class ProtocolsDj extends Component {
     quotes: [
       {
         id: 2655,
-        quote_id: "ML-02393",
-        type: "truth",
-        author: "William Hazlitt",
-        quote: "An honest man speaks the truth, though it may give offence a vain man, in order that it may.",
-        created_at: "2018-12-09 22:41:29",
-        updated_at: "2018-12-09 23:29:08"
+        quote_id: "",
+        type: "",
+        author: "",
+        quote: "",
+        created_at: "",
+        updated_at: ""
       }
     ]
   }
@@ -33,7 +33,7 @@ export default class ProtocolsDj extends Component {
          <ScrollView>
            {
              this.state.quotes.map((item, index) => (
-               <TouchableOpacity key={item.quote_id} style={styles.item} onPress={() => this.alertName(item.author)}>
+               <Touch ableOpacity key={item.quote_id} style={styles.item} onPress={() => this.alertName(item.author)}>
                  <Text>{item.quote}</Text>
                </TouchableOpacity>
              ))
